@@ -71,6 +71,17 @@ for c in range(cols-2,-1,-1):
         text = ''.join(diag)
         diagonals.append(text)
         res_1 += len(re.findall(r'XMAS', text)) + len(re.findall(r'SAMX', text))
-
-print(diagonals) 
 print("Day4-Part1 result: {}".format(res_1))
+
+# Part 2:
+rows = len(input)
+cols = len(input[0])
+res_2 = 0
+for i in range(rows):
+    for j in range(cols):
+        if input[i][j] == "A" and (i < rows-1) and i > 0 \
+            and (j < cols-1) and j > 0:
+            if set([input[i-1][j-1], input[i+1][j+1]]) == set(["M", "S"]) and \
+                set([input[i-1][j+1], input[i+1][j-1]]) == set(["M", "S"]):
+                res_2 +=1
+print("Day4-Part2 result: {}".format(res_2))
