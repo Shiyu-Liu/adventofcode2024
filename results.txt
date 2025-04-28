@@ -1,0 +1,8 @@
+Day1-Part1 result: 1938424
+Day1-Part2 result: 22014209
+Day2-Part1 result: 314
+Day2-Part2 result: 373
+Day3-Part1 result: 178794710
+Day3-Part2 result: 76729637
+Day4-Part1 result: 2633
+Day4-Part2 result: 1936
